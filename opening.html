@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title><img src="images/logohungry.png" alt=""></title>
+</head>
+<body class="bg-danger"> <!-- Adding bg-success class to set background color to red -->
+
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logohungry.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-left">
+                   
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="index.html">HOME</a>
+                        </li>
+                    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="member.html">BECOME A MEMBER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">MENU</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Content for full width of the screen -->
+                <h1 class="display-1 text-center"><img src="images/logohungry.png" alt=""></h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <!-- Content for one-third of the screen on laptops and larger screens -->
+                    <img src="images/open.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <h2 class="text-center" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"h2>
+               
+                    We are thrilled to have you visit HUNGRY EATS every day from 11:00 AM to 10:00 PM. We are here to serve you whether you're in the mood for a filling lunch, a delectable supper, or a late-night snack. At whatever time of day, our committed staff is prepared to deliver you a culinary experience that fulfills your desires. Enjoy our delicious menu items, prepared with love and presented with attention, whenever we're open. We're excited to serve you from 11:00 AM to 10:00 PM, whether you're stopping by for a quick lunch or arranging a leisurely dinner with friends and family. We want every visit to HUNGRY EATS to be an unforgettable one.</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12  text-center">
+                    <h2 class="text-center" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"h2>
+                    Our welcoming gastronomic sanctuary, Hungry Eats, is tucked away on the lively FN Street, right in the middle of Bristol's busy city centre. Our place is more than simply a dining room; it's a location where creativity and flavour collide, with each dish serving as a narrative in itself. Hungry Eats offers a memorable eating experience, whether you're a resident searching for a filling lunch or you're visiting the area. Want to get in touch with us? Give us a call at 345-679-9099, and our hardworking staff will be happy to help. And below that, there's a map that shows you where to pick up food boxes. The locations are shown by red dots on the map, so you can easily go to our delicious products. At Hungry Eats, we're about more than simply food—we want to use amazing culinary experiences to make lifelong memories.</h2>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center">
+                            <img src="images/VB3 - Maps - Bristol City Map 2023.png" class="img-fluid" id="mapImage">
+                        </div>
+                    </div>
+                    
+                    <!-- Hidden bigger version of the image -->
+                    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="mapModalLabel">Bristol City Map</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/VB3 - Maps - Bristol City Map 2023.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- jQuery -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            // Show bigger version of the image in modal when clicked
+                            $('#mapImage').click(function() {
+                                $('#mapModal').modal('show');
+                            });
+                        });
+                    </script>
+            </div>
+
+        </div>
+                     
+
+            </div>
+            
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>
